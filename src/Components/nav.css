@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0048ffcf;
+    height: 100px; 
+}
+
+.logo{
+    width: 230px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px ;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.nav-left{
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-bar{
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 3px 0px 3px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #fdfdfd;
+    font-weight: 600;
+}
+
+.search-btn svg,
+.cart svg,
+.login svg,
+.user svg
+{
+    color: #cbe2f5;
+    width: 27px;
+    height: 27px;
+    padding: 3px 0;
+    cursor: pointer;
+}
+
+.user , .login{
+    color: #cbe2f5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.user-pic{
+    width: 35px;
+    height: 35px;
+    padding: 3px ;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.search-btn svg{
+    z-index: -1;
+    margin-left:-50px ;
+    color: #0048ffcf;
+    margin-top: 3px;
+}
+
+.load{
+    display: flex;
+    padding-top: 300px;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: #cbe2f58f;
+}
+
+.main-nav{
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    left: 25%;
+    list-style-type: none;
+    margin: 20px;
+    padding-top: 10px;
+}
+
+.nav-item{
+    font-weight: 550;
+    margin-top: 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    transform: translate all;
+    transition: ease-in 0.1s;
+}
+
+.offer{
+    position: absolute;
+    right: 0;
+    background-color: #e1d339dc;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 20px 10px 20px ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+    cursor: pointer;
+    transform: translate all;
+    transition: ease-in 0.3s;
+   
+}
+
+.main-nav li:hover,
+.nav-item:hover{
+    color: #0040ff;
+    font-weight: 700;
+    scale: 1.1;
+}
+
+.offer:hover{
+    scale: 1.1;
+}
+
+
