@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    width: 100%;
+    background-color: #001341;
+    margin-bottom: -18px;
+    padding: 20px;
+}
+
+.footer-container{
+    display: flex;
+    margin: 20px 10px;
+}
+
+.perk{
+    display: flex;
+    margin: 20px 40px;
+    cursor: pointer;
+}
+
+.perk-icon svg{
+    margin: 7px;
+    width: 30px;
+    height: auto;
+    color: rgb(211, 211, 3);
+}
+
+.perk-info{
+    margin-left: 20px ;
+    color: rgb(255, 255, 255);
+}
+
+.perk-info h4{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgb(235, 235, 0);
+}
+
+.perk-info h6{
+    font-size: 9px;
+    font-weight:100;
+    line-height: 17px;
+}
+
+.footer-left{
+    border-right: 2px solid white;
+}
+
+.footer-right{
+    width: 100%;
+}
+
+.footer-logo img{
+   width: 200px;
+   height: auto;
+
+}
+.footer-head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    background-color: #3083f0;
+    padding: 5px ;
+    padding-top: 13px;
+    border-radius: 70px;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.site-map{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 40px;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.map-head{
+    color: rgb(211, 211, 3);
+}
+
+.map-items{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 20px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.map-items li:hover,
+.map-items .mail:hover{
+    text-decoration: underline;
+    color: rgb(153, 153, 153);
+}
+
+.map-items .mail{
+   text-decoration: none;
+    color: white;
+}

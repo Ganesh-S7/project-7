@@ -1,14 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family:'Quicksand', sans-serif;;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+    scrollbar-width: none;
+  } 
+  ::-webkit-scrollbar-track {
+    background: white; 
+  } 
+  ::-webkit-scrollbar-thumb {
+    background: rgb(58, 119, 250); 
+  } 
+ 
 
 header{
     display: flex;
+    position: fixed; top: 0;
+    width: 100%;
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
-    background-color: #0048ffcf;
+    background-color: #0047fb;
     height: 100px; 
 }
 
@@ -70,7 +91,7 @@ header{
 .user-pic{
     width: 35px;
     height: 35px;
-    padding: 3px ;
+    padding: 3px;
     cursor: pointer;
     border-radius: 50%;
 
@@ -93,11 +114,12 @@ header{
 }
 
 nav{
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 70px;
-    background-color: #cbe2f58f;
+    background-color: #cbe2f5;
 }
 
 .main-nav{
@@ -114,6 +136,7 @@ nav{
 .nav-item{
     font-weight: 550;
     margin-top: 10px;
+    /* font-size: 14px; */
     cursor: pointer;
     color: black;
     text-decoration: none;
@@ -131,11 +154,10 @@ nav{
     text-align: center;
     display: flex;
     align-items: center;
-    font-weight: 550;
+    font-weight: 550;    
     cursor: pointer;
     transform: translate all;
     transition: ease-in 0.3s;
-   
 }
 
 .main-nav li:hover,

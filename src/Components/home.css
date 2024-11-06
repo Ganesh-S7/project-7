@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -80,7 +79,7 @@
 
 .box{
     width: 250px;
-    height: 360px;
+    height: 320px;
     padding: 10px;
     border: 3px solid rgb(223, 232, 234);
     margin: 30px 20px ;
@@ -103,8 +102,8 @@
 }
 
 .box-img img{
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     cursor: pointer;
     z-index: 1;
@@ -153,11 +152,13 @@
     font-weight: 600;
     transition-timing-function: ease-in;
     transition: all 0.5s ;
-    border: 2px solid #e1d339dc;
+    /* border: 2px solid #e1d339dc; */
+    cursor:pointer;
 }
 
 .add button:hover{
-    background-color: rgba(255, 230, 0, 0.276);    
+    background-color: rgba(0, 85, 255, 0.858); 
+    color:white;   
 }
 
 .box-img img:hover{
@@ -192,4 +193,132 @@
 
 .box:hover .box-icon{
     margin-left: 80%;
+}
+
+.banner-container{
+    display: flex;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.banner-left img {
+    width: 420px;
+    height: auto;
+    display: flex;
+    margin: 20px 20px 20px 30px;
+}
+.banner-right img{
+    height: 350px;
+    width: 370px;
+    margin: 20px 10px 0px 0px;
+}
+.big-banner{
+    width: 770px !important;
+}
+
+.newsletter-section{
+    display: flex;
+    justify-content: center;
+    margin: 90px 30px;
+    padding: 50px 30px 30px 30px;
+    background: #e2f6ff;
+    border-radius: 20px;
+}
+
+.news-header h2{
+  width: 100%;
+  max-width: 700px;
+  font-size: 30px;
+  color: rgb(1, 1, 113);
+  line-height: 50px;
+  text-align: center;
+}
+
+.news-header h3{
+    color: gray;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.email-form{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.email-form input{
+    padding: 10px 20px;
+    width: 300px;
+    border: 3px solid gray;
+    color: gray;
+    font-size: 18px;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.email-form input:focus,
+.email-form input:hover{
+    outline:none;
+    border-color: rgb(2, 2, 77);
+}
+
+.email-form button{
+    margin: 0px 20px;
+    padding: 10px 20px;
+    color: black;
+    background: #e1d339dc;
+    width: 140px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+
+.email-form button:hover{
+    background: rgba(0, 85, 255, 0.858);
+    color: white;
+}
+
+.medias{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.medias p{
+   margin: 20px;
+}
+
+.medias p svg{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.fb svg:hover{
+    color: blue;
+}
+
+.ig svg:hover{
+    color: rgb(201, 7, 130);
+}
+
+.tw svg:hover{
+    color: rgb(48, 48, 48);
+}
+
+.yt svg:hover{
+    color: rgb(255, 0, 0);
+}
+
+.tg svg:hover{
+    color: rgb(0, 136, 255);
+}
+
+.fb svg:hover{
+    color: blue;
 }

@@ -191,7 +191,7 @@ const Homeproducts =
     },
     {
         id: 36,
-        name: 'Sony WH-CH720N HeadPhones',
+        name: 'Sony WH-CH72 HeadPhones',
         price: '1,443',
         discount: '2,999',
         img: 'http://localhost:3000//img/p36.webp',
