@@ -1,34 +1,21 @@
-import React, { lazy, useState , useEffect} from "react";
+import React, { lazy , useEffect} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import  './home.css';
-import Homeproducts from "./home_products";
+// import Homeproducts from "./home_products";
 import { GoHeartFill } from "react-icons/go";
 import { MdRemoveRedEye } from "react-icons/md";
 import { FaFacebook, FaTelegram,  FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
-const Home = ()=>{
-    const [trendingProducts , settrendingProducts] = useState(Homeproducts);
+const Home = ({ Products , tnd , filtercato })=>{
+    // const [trendingProducts , settrendingProducts] = useState(Homeproducts);
 
-    const filtercato = (x) => {
-        
-        const filterProducts = Homeproducts.filter((products)=>{
-            return products.type === x;
-        });
-        settrendingProducts(filterProducts)
-    };
 
-    const trending = ()=>{
-        const filterTrending = Homeproducts.filter((product)=>{
-            return product.tnd === 'yes';
-        });
-        settrendingProducts(filterTrending)
-    };
 
     useEffect(()=>{
-        trending()
+        tnd()
     },[])
 
     return(
@@ -53,7 +40,7 @@ const Home = ()=>{
             <section className="products-section">
                 <div className="products-header">
                     <div className="heading">
-                        <h2 onClick={()=>trending()}>Trending products</h2>
+                        <h2 onClick={()=>tnd()}>Trending products</h2>
                     </div>
                     <div className="cate">
                         <h3 onClick={()=>filtercato('new')}>New</h3>
@@ -63,7 +50,7 @@ const Home = ()=>{
                 </div>
                 <div className="products">
                     <div className="container">
-                        {trendingProducts.map((product, index)=>  {
+                        {Products.map((product, index)=>  {
                             return (
                                 <>
                                     <div className="box"  key={index}>

@@ -88,7 +88,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            
+        </div>
+        <div className='copyright'>
+            <h3>copyright &copy; 2025 <span>HappyShop</span></h3>
         </div>
     </footer>
     </>

@@ -8,11 +8,12 @@ import { FiLogIn , FiLogOut } from "react-icons/fi";
 import { FaUserAlt } from "react-icons/fa";
 
 
-function Nav(){
+function Nav( {Search , setSearch , searchProducts}){
     const { loginWithRedirect , logout , user, isAuthenticated, isLoading } = useAuth0();
     if (isLoading) {
         return <div className="load">Loading ...</div>;
       }
+      console.log(Search)
     return(
         <>
         <header>
@@ -21,8 +22,8 @@ function Nav(){
             </div>
             <div className="nav-left">
                 <div className="search">
-                    <input className="search-bar" type="text" placeholder="Search"/>
-                    <div className="search-btn"><FiSearch /></div>
+                    <input className="search-bar" type="text" placeholder="Search" value={Search} onChange={(e)=> setSearch(e.target.value)}/>
+                    <div className="search-btn" onClick={searchProducts}><FiSearch /></div>
                 </div>
                 <div className="cart"><MdOutlineShoppingCart /></div>
                 {
@@ -50,7 +51,7 @@ function Nav(){
                 </ul>
             </div>
             <div className="offer">
-                <p>flat 40% over all products</p>
+                <p>flat 25% over all products</p>
             </div>
         </nav> 
         </>

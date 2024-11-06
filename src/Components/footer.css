@@ -107,3 +107,15 @@ footer{
    text-decoration: none;
     color: white;
 }
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.copyright h3 span {
+    color: rgb(211, 211, 3);
+}

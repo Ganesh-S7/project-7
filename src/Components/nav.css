@@ -119,7 +119,7 @@ nav{
     justify-content: space-between;
     width: 100%;
     height: 70px;
-    background-color: #cbe2f5;
+    background-color: #001341;
 }
 
 .main-nav{
@@ -138,7 +138,7 @@ nav{
     margin-top: 10px;
     /* font-size: 14px; */
     cursor: pointer;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transform: translate all;
     transition: ease-in 0.1s;
@@ -147,7 +147,7 @@ nav{
 .offer{
     position: absolute;
     right: 0;
-    background-color: #e1d339dc;
+    background-color: #e1d339;
     border-radius: 12px;
     padding: 15px;
     margin: 10px 20px 10px 20px ;
@@ -162,7 +162,7 @@ nav{
 
 .main-nav li:hover,
 .nav-item:hover{
-    color: #0040ff;
+    color: #e1d339;
     font-weight: 700;
     scale: 1.1;
 }

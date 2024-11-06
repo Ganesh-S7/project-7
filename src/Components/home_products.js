@@ -49,12 +49,21 @@ const Homeproducts =
         type: 'featured'
     },
     {
+        id: 45,
+        name: 'Dell Inspiron 5430',
+        price: '60,990',
+        discount: '58,990',
+        img: 'http://localhost:3000//img/p45.webp',
+        cat: 'laptop',
+        type: 'none'
+    },
+    {
         id: 6,
         name: 'Titan Crest Smartwatch',
         price: '7,995',
         discount: '13,499',
         img: 'http://localhost:3000//img/p6.webp',
-        cat: 'smartwatch',
+        cat: 'watch',
         type: 'top'
     },
     {
@@ -63,7 +72,7 @@ const Homeproducts =
         price: '1,599',
         discount: '4,999',
         img: 'http://localhost:3000//img/p7.webp',
-        cat: 'smartwatch',
+        cat: 'watch',
         type: 'new'
     },
     {
@@ -72,7 +81,7 @@ const Homeproducts =
         price: '3,499',
         discount: '8,999',
         img: 'http://localhost:3000//img/p8.webp',
-        cat: 'smartwatch',
+        cat: 'watch',
         type: 'featured',
         tnd: 'yes'
     },
@@ -82,7 +91,7 @@ const Homeproducts =
         price: '1,299',
         discount: '2,499',
         img: 'http://localhost:3000//img/p9.webp',
-        cat: 'smartwatch',
+        cat: 'watch',
         type: 'new',
         tnd: 'yes'
     },
@@ -92,8 +101,17 @@ const Homeproducts =
         price: '2,299',
         discount: '3,499',
         img: 'http://localhost:3000//img/p10.webp',
-        cat: 'smartwatch',
+        cat: 'watch',
         type: 'featured'
+    },
+    {
+        id: 44,
+        name: 'Noise Vortex Plus',
+        price: '2,859',
+        discount: '7,999',
+        img: 'http://localhost:3000//img/p44.jpg',
+        cat: 'watch',
+        type: 'none'
     },
     {
         id: 11,
@@ -101,8 +119,8 @@ const Homeproducts =
         price: '1,52,499',
         discount: '1,64,999',
         img: 'http://localhost:3000//img/p11.webp',
-        cat: 'smartphone',
-        type: 'none'
+        cat: 'phone',
+        type: 'featured'
     },
     {
         id: 12,
@@ -110,7 +128,7 @@ const Homeproducts =
         price: '79,900',
         discount: '79,999',
         img: 'http://localhost:3000//img/p12.webp',
-        cat: 'smartphone',
+        cat: 'phone',
         type: 'new'
     },
     {
@@ -119,7 +137,7 @@ const Homeproducts =
         price: '79,900',
         discount: '79,999',
         img: 'http://localhost:3000//img/p13.webp',
-        cat: 'smartphone',
+        cat: 'phone',
         type: 'top',
         tnd: 'yes'
     },
@@ -129,7 +147,7 @@ const Homeproducts =
         price: '1,21,999',
         discount: '1,34,999',
         img: 'http://localhost:3000//img/p14.webp',
-        cat: 'smartphone',
+        cat: 'phone',
         type: 'top',
         tnd: 'yes'
     },
@@ -139,7 +157,7 @@ const Homeproducts =
         price: '49,999',
         discount: '79,999',
         img: 'http://localhost:3000//img/p15.webp',
-        cat: 'smartphone',
+        cat: 'phone',
         type: 'new',
         tnd: 'yes'
     },
@@ -149,7 +167,7 @@ const Homeproducts =
         price: '57,999',
         discount: '64,999',
         img: 'http://localhost:3000//img/p16.webp',
-        cat: 'smartphone',
+        cat: 'phone',
         type: 'top'
     },
     {
@@ -158,7 +176,7 @@ const Homeproducts =
         price: '49,998',
         discount: '59,999',
         img: 'http://localhost:3000//img/p17.webp',
-        cat: 'smartphone',
+        cat: 'phone',
         type: 'featured'
     },
     {
@@ -167,25 +185,25 @@ const Homeproducts =
         price: '42,399',
         discount: '59,999',
         img: 'http://localhost:3000//img/p18.jpg',
-        cat: 'smartphone',
+        cat: 'phone',
         type: 'new'
     },
-    {
-        id: 19,
-        name: 'Realme 13 pro+ 5G',
-        price: '32,989',
-        discount: '38,999',
-        img: 'http://localhost:3000//img/p19.webp',
-        cat: 'smartphone',
-        type: 'featured'
-    },
+    // {
+    //     id: 19,
+    //     name: 'Realme 13 pro+ 5G',
+    //     price: '32,989',
+    //     discount: '38,999',
+    //     img: 'http://localhost:3000//img/p19.webp',
+    //     cat: 'phone',
+    //     type: 'featured'
+    // },
     {
         id: 20,
         name: 'Vivo V40 Pro 5G',
         price: '46,399',
         discount: '54,499',
         img: 'http://localhost:3000//img/p20.webp',
-        cat: 'smartphone',
+        cat: 'phone',
         type: 'new',
         tnd: 'yes'
     },
@@ -195,7 +213,7 @@ const Homeproducts =
         price: '1,443',
         discount: '2,999',
         img: 'http://localhost:3000//img/p36.webp',
-        cat: 'w_clothes',
+        cat: 'earphones',
         type: 'top',
         tnd: 'yes'
     },
@@ -205,7 +223,7 @@ const Homeproducts =
         price: '1,599',
         discount: '2,299',
         img: 'http://localhost:3000//img/p37.webp',
-        cat: 'w_clothes',
+        cat: 'earphones',
         type: 'top'
     },
     {
@@ -214,7 +232,7 @@ const Homeproducts =
         price: '23,790',
         discount: '24,999',
         img: 'http://localhost:3000//img/p38.webp',
-        cat: 'w_clothes',
+        cat: 'earphones',
         type: 'new',
         tnd: 'yes'
     },
@@ -224,7 +242,7 @@ const Homeproducts =
         price: '4,448',
         discount: '8,990',
         img: 'http://localhost:3000//img/p39.webp',
-        cat: 'w_clothes',
+        cat: 'earphones',
         type: 'featured'
     },
     {
@@ -233,7 +251,25 @@ const Homeproducts =
         price: '2,499',
         discount: '3,999',
         img: 'http://localhost:3000//img/p40.webp',
-        cat: 'w_clothes',
+        cat: 'earphones',
+        type: 'none'
+    },
+    {
+        id: 41,
+        name: 'Sony ULT Headphones',
+        price: '4,499',
+        discount: '6,999',
+        img: 'http://localhost:3000//img/p41.jpg',
+        cat: 'earphones',
+        type: 'none'
+    },
+    {
+        id: 42,
+        name: 'Nike M Air Max',
+        price: '36,150',
+        discount: '51,649',
+        img: 'http://localhost:3000//img/p42.jpg',
+        cat: 'shoes',
         type: 'none'
     },
     {
@@ -242,7 +278,7 @@ const Homeproducts =
         price: '2,399',
         discount: '5,499',
         img: 'http://localhost:3000//img/p21.webp',
-        cat: 'shoe',
+        cat: 'shoes',
         type: 'featured',
     },
     {
@@ -251,7 +287,7 @@ const Homeproducts =
         price: '5,299',
         discount: '5,999',
         img: 'http://localhost:3000//img/p22.webp',
-        cat: 'shoe',
+        cat: 'shoes',
         type: 'top',
         tnd: 'yes'
         
@@ -262,7 +298,7 @@ const Homeproducts =
         price: '4,999',
         discount: '5,499',
         img: 'http://localhost:3000//img/p23.webp',
-        cat: 'shoe',
+        cat: 'shoes',
         type: 'top',
         tnd: 'yes'
     },
@@ -272,7 +308,7 @@ const Homeproducts =
         price: '2,399',
         discount: '3,499',
         img: 'http://localhost:3000//img/p24.webp',
-        cat: 'shoe',
+        cat: 'shoes',
     },
     {
         id: 25,
@@ -280,7 +316,7 @@ const Homeproducts =
         price: '3,399',
         discount: '4,499',
         img: 'http://localhost:3000//img/p25.webp',
-        cat: 'shoe',
+        cat: 'shoes',
         type: 'featured'
     },
     {
@@ -330,6 +366,15 @@ const Homeproducts =
         img: 'http://localhost:3000//img/p30.webp',
         cat: 'm_clothes',
         type: 'top'
+    },    
+    {
+        id: 43,
+        name: 'U.S. POLO Sweatshirt',
+        price: '2,089',
+        discount: '3,549',
+        img: 'http://localhost:3000//img/p43.jpg',
+        cat: 'm_clothes',
+        type: 'none'
     },
     {
         id: 31,
@@ -375,6 +420,15 @@ const Homeproducts =
         price: '1,443',
         discount: '2,999',
         img: 'http://localhost:3000//img/p35.webp',
+        cat: 'w_clothes',
+        type: 'none'
+    },
+    {
+        id: 46,
+        name: 'Kanha Cotten Dress',
+        price: '1,129',
+        discount: '2,999',
+        img: 'http://localhost:3000//img/p46.webp',
         cat: 'w_clothes',
         type: 'none'
     },
