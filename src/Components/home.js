@@ -9,7 +9,7 @@ import { FaFacebook, FaTelegram,  FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
-const Home = ({ Products , tnd , filtercato })=>{
+const Home = ({ Products , tnd , filtercato, addtocart })=>{
     // const [trendingProducts , settrendingProducts] = useState(Homeproducts);
 
 
@@ -74,7 +74,7 @@ const Home = ({ Products , tnd , filtercato })=>{
                                             <del className="disc">{product.discount}</del>
                                         </div>
                                         <div className="add">
-                                            <button>Add to cart</button>
+                                            <button onClick={()=>addtocart(product)}>Add to cart</button>
                                         </div>
                                     </div>
                                 </>

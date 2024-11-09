@@ -25,7 +25,8 @@ function Nav( {Search , setSearch , searchProducts}){
                     <input className="search-bar" type="text" placeholder="Search" value={Search} onChange={(e)=> setSearch(e.target.value)}/>
                     <div className="search-btn" onClick={searchProducts}><FiSearch /></div>
                 </div>
-                <div className="cart"><MdOutlineShoppingCart /></div>
+                {/* <div className="cart"><MdOutlineShoppingCart /></div> */}
+                <div className="cart"><Link to ='/cart'><MdOutlineShoppingCart /></Link></div>
                 {
                     isAuthenticated ?
                 

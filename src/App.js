@@ -8,13 +8,40 @@ import React ,{ useState } from 'react';
 function App() {
   const [Products , SetProducts] = useState(Homeproducts);
   const [Search , setSearch] = useState('');
+  const [ cart, setcart ] = useState([]);
 
-  const searchProducts = () =>{
-    const searchFilter = Homeproducts.filter((products)=>{
-        return products.cat === Search;
+  //******* home filters *******//
+  const filtercato = (x) => {
+          
+    const filterProducts = Homeproducts.filter((products)=>{
+        return products.type === x;
     });
-    SetProducts(searchFilter)
+    SetProducts(filterProducts)
   };
+
+  const tnd = ()=>{
+    const filterTnd = Homeproducts.filter((product)=>{
+        return product.tnd === 'yes';
+    });
+    SetProducts(filterTnd)
+  };
+
+  const searchLength = (Search || []).length === 0;
+
+  //******* shop filters *******//
+  const searchProducts = () =>{
+
+    if(searchLength){
+      alert("Please search something");
+      SetProducts(Homeproducts)
+    }else{
+        const searchFilter = Homeproducts.filter((products)=>{
+            return products.cat === Search;
+        });
+        SetProducts(searchFilter)
+      }
+  };
+
 
   const categoriesFilter = (x) =>{
     const filterProducts = Homeproducts.filter((products)=>{
@@ -30,27 +57,28 @@ const trending = ()=>{
     SetProducts(filterTrending)
 };
 
-//***************//
-const filtercato = (x) => {
-        
-  const filterProducts = Homeproducts.filter((products)=>{
-      return products.type === x;
-  });
-  SetProducts(filterProducts)
-};
 
-const tnd = ()=>{
-  const filterTnd = Homeproducts.filter((product)=>{
-      return product.tnd === 'yes';
+
+//*******  add to cart *******// 
+const addtocart = (product) =>{
+  const exist = cart.find((x)=>{
+    return x.id === product.id;
   });
-  SetProducts(filterTnd)
+  if(exist){
+    alert(`${product.name} is already in cart !!!`)
+  }else{
+    setcart([...cart, {...product, qty:1}])    
+    alert(`${product.name} added to cart`)
+  }
 };
+  console.log(cart);
+
 
   return (
     <>
     <BrowserRouter>
       <Nav Search={Search}  setSearch={setSearch} searchProducts={searchProducts} />
-      <Rout Products={Products} categoriesFilter={categoriesFilter} trending={trending} filtercato={filtercato} tnd={tnd} />
+      <Rout Products={Products} categoriesFilter={categoriesFilter} trending={trending} filtercato={filtercato} tnd={tnd} addtocart={addtocart} cart={cart} />
       <Footer/>
       </BrowserRouter>
     </>
