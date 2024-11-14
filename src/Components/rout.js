@@ -5,6 +5,7 @@ import Shop from './shop.js';
 import Cart from './cart.js';
 import Contact from './contact.js';
 import Wishlist from './wishlist.js';
+import Collection from './collection.js';
 
 
 const Rout = ({Products ,categoriesFilter , trending ,filtercato ,tnd , addtocart, cart , setcart, addtolist, list ,detailspage, closePage, showDetails, details, setList}) =>{
@@ -14,8 +15,9 @@ const Rout = ({Products ,categoriesFilter , trending ,filtercato ,tnd , addtocar
             <Route path='/' element={<Home Products={Products}  tnd={tnd} filtercato={filtercato} addtocart={addtocart} detailspage={detailspage} closePage={closePage} showDetails={showDetails} details={details} addtolist={addtolist} />}/>
             <Route path='/cart' element={<Cart cart={cart} setcart={setcart} />} />
             <Route path='/shop' element={<Shop Products={Products} categoriesFilter={categoriesFilter} addtocart={addtocart} trending={trending} addtolist={addtolist} detailspage={detailspage} closePage={closePage} showDetails={showDetails} details={details} />}/>
+            <Route path='/collection' element={<Collection addtolist={addtolist} addtocart={addtocart} detailspage={detailspage} details={details} showDetails={showDetails} closePage={closePage} />} />
             <Route path='/wishlist' element={<Wishlist list={list} setList={setList} addtocart={addtocart} />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/contact' element={<Contact categoriesFilter={categoriesFilter} showDetails={showDetails} closePage={closePage} />} />
         </Routes>
         </>
     )

@@ -100,7 +100,7 @@ const addtolist = (product) =>{
     alert(`${product.name} added to Wishlist`)
   }
 };
-  console.log(list);
+  // console.log(list);
 
 
   return (
