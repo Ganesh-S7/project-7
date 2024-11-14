@@ -1,5 +1,5 @@
 import React from "react";
-import './nav.css';
+import './styles/nav.css';
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
@@ -47,7 +47,7 @@ function Nav( {Search , setSearch , searchProducts}){
                     <li><Link to ='/' className="nav-item">Home</Link></li>
                     <li><Link to ='/shop' className="nav-item">Shop</Link></li>
                     <li><Link to ='/collection' className="nav-item">Collection</Link></li>
-                    <li><Link to ='/about' className="nav-item">About</Link></li>
+                    <li><Link to ='/wishlist' className="nav-item">Wishlist</Link></li>
                     <li><Link to ='/contact' className="nav-item">Contact</Link></li>
                 </ul>
             </div>

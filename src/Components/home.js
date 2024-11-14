@@ -1,16 +1,16 @@
 import React, { lazy , useEffect} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-import  './home.css';
+import  './styles/home.css';
 // import Homeproducts from "./home_products";
 import { GoHeartFill } from "react-icons/go";
 import { MdRemoveRedEye } from "react-icons/md";
 import { FaFacebook, FaTelegram,  FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
 
-const Home = ({ Products , tnd , filtercato, addtocart })=>{
-    // const [trendingProducts , settrendingProducts] = useState(Homeproducts);
+const Home = ({ Products , tnd , filtercato, addtocart, detailspage, closePage, showDetails, details, addtolist })=>{
 
 
 
@@ -20,6 +20,31 @@ const Home = ({ Products , tnd , filtercato, addtocart })=>{
 
     return(
         <>
+        {
+        showDetails?
+        <>
+        <div className='product-details'>
+            <div onClick={()=>closePage()}><IoClose /></div>
+            <div className='product-details-container'>
+                <div className='details-img'>
+                    <img src={details.img} alt='products_img' />
+                </div>
+                <div className='products-info'>
+                    <h4>{details.cat}</h4>
+                    <h3>{details.name}</h3>
+                    <p>{details.description}</p>
+                    <div>
+                        <h5>₹{details.price}</h5>
+                        <del>₹{details.discount}</del>                    
+                    </div>
+                    <button onClick={()=>addtocart(details)} className='add-cart'>Add to cart</button>
+                    <button onClick={()=>addtocart(details)} className='add-wish'>Add to Wishlist</button>
+                </div>
+            </div>
+        </div>
+        </>
+        :null
+    }
         <Carousel infiniteLoop={true} autoPlay={true} interval={2500} stopOnHover={false} emulateTouch={true} centerMode={true} centerSlidePercentage={90}>
                 <div>
                     <img src="http://localhost:3000//img/slider4.jpeg" alt='pro'/>
@@ -57,10 +82,10 @@ const Home = ({ Products , tnd , filtercato, addtocart })=>{
                                         <div className="box-img">
                                             <img src={product.img} alt="products_image" loading={lazy}/>
                                             <div className="box-icon">
-                                                <div className="icon">
+                                                <div className="icon" onClick={()=>addtolist(product)}>
                                                     <GoHeartFill />
                                                 </div>
-                                                <div className="icon">
+                                                <div className="icon" onClick={()=>detailspage(product)}>
                                                     <MdRemoveRedEye />
                                                 </div>
                                             </div>

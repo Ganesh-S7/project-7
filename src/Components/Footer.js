@@ -2,12 +2,12 @@ import React from 'react';
 import { FaPiggyBank, FaWallet  } from "react-icons/fa6";
 import { FaShippingFast } from "react-icons/fa";
 import { RiCustomerService2Fill } from "react-icons/ri";
-import './footer.css';
+import './styles/footer.css';
 
 const Footer = () => {
   return (
     <>
-    <footer>
+    <footer id='footer'>
         <div className='footer-container'>
             <div className='footer-left'>
                 <div className='perk'>

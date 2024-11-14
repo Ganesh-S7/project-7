@@ -1,17 +1,42 @@
 import React, { lazy, useEffect } from 'react'
-import './shop.css';
+import './styles/shop.css';
 import { GoHeartFill } from "react-icons/go";
 import { MdRemoveRedEye } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
 
-const Shop = ({ Products , trending , categoriesFilter }) => {
-
-    console.log(Products);
+const Shop = ({ Products , trending , categoriesFilter , addtocart , addtolist , detailspage, closePage, details, showDetails }) => {
+    // console.log(Products);
     useEffect(()=>{
         trending()
     },[])
 
   return (
     <>
+    {
+        showDetails?
+        <>
+        <div className='product-details'>
+            <div onClick={()=>closePage()}><IoClose /></div>
+            <div className='product-details-container'>
+                <div className='details-img'>
+                    <img src={details.img} alt='products_img' />
+                </div>
+                <div className='products-info'>
+                    <h4>{details.cat}</h4>
+                    <h3>{details.name}</h3>
+                    <p>{details.description}</p>
+                    <div>
+                        <h5>₹{details.price}</h5>
+                        <del>₹{details.discount}</del>                    
+                    </div>
+                    <button onClick={()=>addtocart(details)} className='add-cart'>Add to cart</button>
+                    <button onClick={()=>addtolist(details)} className='add-wish'>Add to Wishlist</button>
+                </div>
+            </div>
+        </div>
+        </>
+        :null
+    }
       <section className='shop'>
         <div className='shop-container'>
             <div className='shop-left'>
@@ -60,10 +85,10 @@ const Shop = ({ Products , trending , categoriesFilter }) => {
                                             <div className="box-img">
                                                 <img src={product.img} alt="products_image" loading={lazy}/>
                                                 <div className="box-icon">
-                                                    <div className="icon">
+                                                    <div className="icon" onClick={()=>addtolist(product)}>
                                                         <GoHeartFill />
                                                     </div>
-                                                    <div className="icon">
+                                                    <div className="icon" onClick={()=>detailspage(product)}>
                                                         <MdRemoveRedEye />
                                                     </div>
                                                 </div>
@@ -77,7 +102,7 @@ const Shop = ({ Products , trending , categoriesFilter }) => {
                                                 <del className="disc">{product.discount}</del>
                                             </div>
                                             <div className="add">
-                                                <button>Add to cart</button>
+                                                <button onClick={()=>addtocart(product)} >Add to cart</button>
                                             </div>
                                         </div>
                                     </>

@@ -171,4 +171,7 @@ nav{
     scale: 1.1;
 }
 
+.cart svg:hover{
+    color: #ffea00;
+}
 
