@@ -43,7 +43,9 @@ const Wishlist = ({ list, setList, addtocart }) => {
             </div>
             </>
             }
-
+            {
+              list.length >= 1 &&
+              <>
             <div className='wishlist-container'>
                 <div className='left-wish'>
                     <img src="http://localhost:3000//img/vertical.png" alt="poster" />
@@ -73,6 +75,8 @@ const Wishlist = ({ list, setList, addtocart }) => {
             }
                 </div>
             </div>
+            </>
+            }
         </section>
         </>
   )

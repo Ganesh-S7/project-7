@@ -4,6 +4,7 @@
 }
 
 .wishlist-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -66,6 +67,6 @@
 }
 
 .wish-desc{
-    max-width: 350px;
+    /* width: 350px; */
     font-weight: 500;
 }

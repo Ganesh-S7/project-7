@@ -24,7 +24,8 @@ html {
 
 header{
     display: flex;
-    position: fixed; top: 0;
+    position: fixed; 
+    top: 0;
     width: 100%;
     z-index: 1000;
     justify-content: space-between;
@@ -97,6 +98,23 @@ header{
 
 }
 
+.username{
+    color: white;
+    font-size: 14px;
+    margin: 15px 10px;
+    font-weight: 500;
+}
+
+.username p{
+    color: #e1d339;
+    font-size: 15px;
+}
+
+
+.nav-contain{
+    display: flex;
+}
+
 .search-btn svg{
     z-index: -1;
     margin-left:-50px ;
@@ -114,12 +132,19 @@ header{
 }
 
 nav{
+    position:inherit;
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 70px;
     background-color: #001341;
+}
+
+.nav-bar,
+.nav-right{
+    width: 100%;
+    height: auto;
 }
 
 .main-nav{
@@ -151,8 +176,6 @@ nav{
     border-radius: 12px;
     padding: 15px;
     margin: 10px 20px 10px 20px ;
-    text-align: center;
-    display: flex;
     align-items: center;
     font-weight: 550;    
     cursor: pointer;

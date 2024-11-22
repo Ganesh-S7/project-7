@@ -35,6 +35,7 @@ const Contact = () => {
 
   return (
     <>
+    {/* <div>helllo</div> */}
     <section className='contact-section'> 
         <div className='contact-container'>
             <div className='contact-form'>

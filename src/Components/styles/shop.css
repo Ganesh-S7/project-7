@@ -5,6 +5,11 @@
 
 .shop-container{
     display: flex;
+    overflow: hidden;
+}
+
+#shop-id{
+    display: none;
 }
 
 .poster1 img{
@@ -82,12 +87,19 @@
     margin: 10px 20px;
 }
 
+.details-wrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
 .product-details{
     width: 850px;
-    height: 480px;
+    height: 440px;
     position: fixed;
-    top: 120px;
-    left: 180px;
+    /* top: 120px; */
+    /* left: 180px; */
     background: white;
     z-index: 20;
     border: 1px solid #f6f6f6;

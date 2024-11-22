@@ -4,6 +4,7 @@ import Rout from './Components/rout';
 import Footer from './Components/Footer';
 import Homeproducts from './Components/home_products';
 import React ,{ useState } from 'react';
+import './Components/styles/responsive.css';
 
 function App() {
   const [Products , SetProducts] = useState(Homeproducts);

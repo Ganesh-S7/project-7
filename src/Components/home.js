@@ -23,6 +23,7 @@ const Home = ({ Products , tnd , filtercato, addtocart, detailspage, closePage, 
         {
         showDetails?
         <>
+        <div className="details-wrapper">
         <div className='product-details'>
             <div onClick={()=>closePage()}><IoClose /></div>
             <div className='product-details-container'>
@@ -38,14 +39,15 @@ const Home = ({ Products , tnd , filtercato, addtocart, detailspage, closePage, 
                         <del>₹{details.discount}</del>                    
                     </div>
                     <button onClick={()=>addtocart(details)} className='add-cart'>Add to cart</button>
-                    <button onClick={()=>addtocart(details)} className='add-wish'>Add to Wishlist</button>
+                    <button onClick={()=>addtolist(details)} className='add-wish'>Add to Wishlist</button>
                 </div>
             </div>
+        </div>
         </div>
         </>
         :null
     }
-        <Carousel infiniteLoop={true} autoPlay={true} interval={2500} stopOnHover={false} emulateTouch={true} centerMode={true} centerSlidePercentage={90}>
+        <Carousel infiniteLoop={true}  interval={2500} autoPlay={true} stopOnHover={false} emulateTouch={true} centerMode={true} centerSlidePercentage={90}>
                 <div>
                     <img src="http://localhost:3000//img/slider4.jpeg" alt='pro'/>
                 </div>
@@ -111,8 +113,8 @@ const Home = ({ Products , tnd , filtercato, addtocart, detailspage, closePage, 
             <section className="banners-section">
                 <div className="banner-container">
                     <div className="banner-left">
-                        <img src="http://localhost:3000//img/banner5.jpg" alt="banner"/>
-                        <img src="http://localhost:3000//img/banner1.jpg" alt="banner"/>
+                        <img className="banner-up" src="http://localhost:3000//img/banner5.jpg" alt="banner"/>
+                        <img className="banner-down" src="http://localhost:3000//img/banner1.jpg" alt="banner"/>
                     </div>
                     <div className="banner-right">
                         <img src="http://localhost:3000//img/banner2.jpg" alt="banner"/>

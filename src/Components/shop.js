@@ -15,6 +15,7 @@ const Shop = ({ Products , trending , categoriesFilter , addtocart , addtolist ,
     {
         showDetails?
         <>
+       <div className="details-wrapper">
         <div className='product-details'>
             <div onClick={()=>closePage()}><IoClose /></div>
             <div className='product-details-container'>
@@ -34,33 +35,39 @@ const Shop = ({ Products , trending , categoriesFilter , addtocart , addtolist ,
                 </div>
             </div>
         </div>
+        </div>
         </>
         :null
     }
       <section className='shop'>
+        <div className='cart-id' id='shop-id'>
+            <h3>Home . Shop</h3>
+        </div>
         <div className='shop-container'>
             <div className='shop-left'>
                 <div className='shop-head'>
                     <h2>Home . Shop</h2>
                 </div>
-                <div className='poster1'>
-                    <img src='http://localhost:3000//img/poster4.jpg' alt='poster'/>
-                </div>
-                <div className='shop-cato'>
-                    <div className='cato-head'>
-                        <h2>All Categories</h2>
+                <div className='cato-grp'>
+                    <div className='poster1'>
+                        <img src='http://localhost:3000//img/poster4.jpg' alt='poster'/>
                     </div>
-                    <div className='cato-list'>
-                        <ul>
-                            <li onClick={()=>trending()}>All</li>
-                            <li onClick={()=>categoriesFilter('laptop')}>LAPTOPS</li>
-                            <li onClick={()=>categoriesFilter('watch')}>WATCHS</li>
-                            <li onClick={()=>categoriesFilter('phone')}>PHONES</li>
-                            <li onClick={()=>categoriesFilter('earphones')}>EARPHONES</li>
-                            <li onClick={()=>categoriesFilter('shoes')}>SHOES</li>
-                            <li onClick={()=>categoriesFilter('m_clothes')}>MEN CLOTHES</li>
-                            <li onClick={()=>categoriesFilter('w_clothes')}>WOMEN CLOTHES</li>
-                        </ul>
+                    <div className='shop-cato'>
+                        <div className='cato-head'>
+                            <h2>All Categories</h2>
+                        </div>
+                        <div className='cato-list'>
+                            <ul>
+                                <li onClick={()=>trending()}>All</li>
+                                <li onClick={()=>categoriesFilter('laptop')}>LAPTOPS</li>
+                                <li onClick={()=>categoriesFilter('watch')}>WATCHS</li>
+                                <li onClick={()=>categoriesFilter('phone')}>PHONES</li>
+                                <li onClick={()=>categoriesFilter('earphones')}>EARPHONES</li>
+                                <li onClick={()=>categoriesFilter('shoes')}>SHOES</li>
+                                <li onClick={()=>categoriesFilter('m_clothes')}>MEN CLOTHES</li>
+                                <li onClick={()=>categoriesFilter('w_clothes')}>WOMEN CLOTHES</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 {/* <div className='poster1'>
@@ -77,7 +84,7 @@ const Shop = ({ Products , trending , categoriesFilter , addtocart , addtolist ,
                 <div className='shop-products'>
                     <h3 className='shop-title'>SHOP PRODUCTS</h3>
                     <div className="products">
-                        <div className="container">
+                        <div className="container" id='products-align'>
                             {Products.map((product, index)=>  {
                                 return (
                                     <>

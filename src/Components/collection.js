@@ -40,6 +40,7 @@ const Collection = ({ addtolist, detailspage, details, addtocart, showDetails, c
         {
         showDetails?
         <>
+       <div className="details-wrapper">
         <div className='product-details'>
             <div onClick={()=>closePage()}><IoClose /></div>
             <div className='product-details-container'>
@@ -55,9 +56,10 @@ const Collection = ({ addtolist, detailspage, details, addtocart, showDetails, c
                         <del>₹{details.discount}</del>                    
                     </div>
                     <button onClick={()=>addtocart(details)} className='add-cart'>Add to cart</button>
-                    <button onClick={()=>addtocart(details)} className='add-wish'>Add to Wishlist</button>
+                    <button onClick={()=>addtolist(details)} className='add-wish'>Add to Wishlist</button>
                 </div>
             </div>
+        </div>
         </div>
         </>
         :null

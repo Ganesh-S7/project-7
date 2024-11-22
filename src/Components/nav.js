@@ -35,7 +35,7 @@ function Nav( {Search , setSearch , searchProducts}){
                     <div className="login" onClick={() => loginWithRedirect()}><FiLogIn />Login</div>
                 }
                 { isAuthenticated ?
-                <div className="user"><img className='user-pic' src={user.picture} alt="user"/>{user.name}</div>
+                <div className="user"> <img className='user-pic' src={user.picture} alt="user"/>profile</div>
                 :
                 <div className="user"><FaUserAlt />profile</div>
                 }
@@ -43,6 +43,18 @@ function Nav( {Search , setSearch , searchProducts}){
         </header>
         <nav>
             <div className="nav-bar">
+
+                <div className="nav-contain">
+                {
+                isAuthenticated?
+                <> 
+                <div className="username">
+                    <p>Hello!<br/></p>
+                    {user.name}
+                </div>
+                </>:
+                null
+                }
                 <ul className="main-nav">
                     <li><Link to ='/' className="nav-item">Home</Link></li>
                     <li><Link to ='/shop' className="nav-item">Shop</Link></li>
@@ -50,6 +62,7 @@ function Nav( {Search , setSearch , searchProducts}){
                     <li><Link to ='/wishlist' className="nav-item">Wishlist</Link></li>
                     <li><Link to ='/contact' className="nav-item">Contact</Link></li>
                 </ul>
+                </div>
             </div>
             <div className="offer">
                 <p>flat 25% over all products</p>

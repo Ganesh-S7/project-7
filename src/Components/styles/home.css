@@ -10,6 +10,13 @@
     padding: 10px;
     
 }
+.carousel-root,
+.products-section,
+.newsletter-section,
+.banner-container{
+    overflow: hidden;
+}
+  
 
 .carousel .thumbs-wrapper{
     display: none;
@@ -75,6 +82,7 @@
     width: 100%;    
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box{
@@ -193,6 +201,11 @@
 
 .box:hover .box-icon{
     margin-left: 80%;
+}
+
+.banners-section{
+    display: flex;
+    justify-content: center;
 }
 
 .banner-container{

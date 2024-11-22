@@ -74,11 +74,11 @@ const Cart = ({cart ,setcart}) => {
           {cart.map((products , index)=>{
             return(
               <>              
-                <div className='cart-box'>
-                  <div className='cart-img'>
+                <div className='cart-box' id='shopc-box'>
+                  <div className='cart-img' id='shopc-img'>
                     <img src={products.img} alt='' key={index} />
                   </div>
-                  <div className='cart-details'>
+                  <div className='cart-details' id='shopc-details'>
                     <h4>{products.cat}</h4>
                     <h3>{products.name}</h3>
                     <p>Price: ₹{products.price}</p>
