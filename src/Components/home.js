@@ -49,19 +49,19 @@ const Home = ({ Products , tnd , filtercato, addtocart, detailspage, closePage, 
     }
         <Carousel infiniteLoop={true}  interval={2500} autoPlay={true} stopOnHover={false} emulateTouch={true} centerMode={true} centerSlidePercentage={90}>
                 <div>
-                    <img src="http://localhost:3000//img/slider4.jpeg" alt='pro'/>
+                    <img src="/img/slider4.jpeg" alt='pro'/>
                 </div>
                 <div>
-                    <img src="http://localhost:3000//img/slider1.jpg" alt='pro'/>
+                    <img src="/img/slider1.jpg" alt='pro'/>
                 </div>        
                 <div>
-                    <img src="http://localhost:3000//img/slider2.jpg" alt='pro'/>
+                    <img src="/img/slider2.jpg" alt='pro'/>
                 </div>        
                 <div>
-                    <img src="http://localhost:3000//img/slider3.jpg" alt='pro'/>
+                    <img src="/img/slider3.jpg" alt='pro'/>
                 </div>                               
                 <div>
-                    <img src="http://localhost:3000//img/slider5.jpeg" alt='pro'/>
+                    <img src="/img/slider5.jpeg" alt='pro'/>
                 </div>               
             </Carousel>
             <section className="products-section">
@@ -113,13 +113,13 @@ const Home = ({ Products , tnd , filtercato, addtocart, detailspage, closePage, 
             <section className="banners-section">
                 <div className="banner-container">
                     <div className="banner-left">
-                        <img className="banner-up" src="http://localhost:3000//img/banner5.jpg" alt="banner"/>
-                        <img className="banner-down" src="http://localhost:3000//img/banner1.jpg" alt="banner"/>
+                        <img className="banner-up" src="/img/banner5.jpg" alt="banner"/>
+                        <img className="banner-down" src="/img/banner1.jpg" alt="banner"/>
                     </div>
                     <div className="banner-right">
-                        <img src="http://localhost:3000//img/banner2.jpg" alt="banner"/>
-                        <img  src="http://localhost:3000//img/banner4.jpg" alt="banner"/>
-                        <img className="big-banner" src="http://localhost:3000//img/banner3.jpg" alt="banner"/>
+                        <img src="/img/banner2.jpg" alt="banner"/>
+                        <img  src="/img/banner4.jpg" alt="banner"/>
+                        <img className="big-banner" src="/img/banner3.jpg" alt="banner"/>
                     </div>
                 </div>
             </section>

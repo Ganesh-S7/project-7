@@ -64,7 +64,7 @@ const Cart = ({cart ,setcart}) => {
               <button className='empty-btn'><Link to="/shop">Shop Now</Link></button>
             </div>
             <div className='empty'>
-              <img src="http://localhost:3000//img/empty.webp" alt="empty" />
+              <img src="/img/empty.webp" alt="empty" />
             </div>
         </div>
       </>

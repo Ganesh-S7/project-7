@@ -6,19 +6,31 @@ import { FiSearch } from "react-icons/fi";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FiLogIn , FiLogOut } from "react-icons/fi";
 import { FaUserAlt } from "react-icons/fa";
+// import Loader from './loader.js';
 
 
 function Nav( {Search , setSearch , searchProducts}){
     const { loginWithRedirect , logout , user, isAuthenticated, isLoading } = useAuth0();
     if (isLoading) {
-        return <div className="load">Loading ...</div>;
-      }
+        return (
+            <section id="load">
+                <div className="dots-container" >
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+        </section>
+        );
+        
+    }
       console.log(Search)
     return(
         <>
         <header>
             <div className="nav-right">
-                <img className="logo" src='http://localhost:3000//img/logo.png' alt="logo"/>
+                <img className="logo" src='/img/logo.png' alt="logo"/>
             </div>
             <div className="nav-left">
                 <div className="search">
