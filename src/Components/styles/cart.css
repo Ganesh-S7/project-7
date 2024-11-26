@@ -205,7 +205,7 @@
 
 .cart-box{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     padding: 30px 50px ;   
     width: 800px;
     overflow: hidden;

@@ -32,19 +32,53 @@ const [details , setDetails] = useState([]);
   const searchLength = (Search || []).length === 0;
 
   //******* shop filters *******//
-  const searchProducts = () =>{
+  
+const categorySynonyms = {
+  phone: ['phone', 'smartphone', 'mobile', 'cellphone'],
+  laptop: ['laptop', 'notebook', 'macbook', 'pc'],
+  watch: ['watch'],
+  shoes: ['shoes', 'footwear', 'snicker'],
+  earphones: ['earphone', 'earbuds', 'airpods', 'headphone', 'headset' ,'bluetooth'],
+  w_clothes: [ 'women', 'dress', "fashion", 'clothe' ],
+  m_clothes: [ 'men', 'hoodie', "fashion", 'clothe' ],
+};
 
-    if(searchLength){
+const searchProducts = () => {
+  // If the search term is empty, show the alert and reset products
+  if (searchLength) {
       alert("Please search something");
-      SetProducts(Homeproducts)
-    }else{
-        const searchFilter = Homeproducts.filter((products)=>{
-            return products.cat === Search;
-        });
-        SetProducts(searchFilter)
-      }
-  };
+      SetProducts(Homeproducts);
+  } else {
+      // Convert the search term to lowercase for case-insensitive matching
+      const lowerCaseSearchTerm = Search.toLowerCase();
 
+      // Find matching synonyms for the search term
+      let matchingCategories = [];
+
+      // Check if the search term matches any synonym group
+      for (let category in categorySynonyms) {
+          // Use regex or includes to check for matching categories
+          const regex = new RegExp(categorySynonyms[category].join("|"), "i");
+          if (regex.test(lowerCaseSearchTerm)) {
+              matchingCategories.push(category); // Add matching category
+          }
+      }
+
+      // If we find matching categories, filter the products
+      if (matchingCategories.length > 0) {
+          // Filter all products whose category matches any of the matching categories
+          const searchFilter = Homeproducts.filter((product) => {
+              // Check if the product's category matches any of the matching categories
+              return matchingCategories.includes(product.cat.toLowerCase());
+          });
+
+          SetProducts(searchFilter);
+      } else {
+          // If no match is found, return an empty set or original products
+          alert("Search not found!!!");
+      }
+  }
+};
 
   const categoriesFilter = (x) =>{
     const filterProducts = Homeproducts.filter((products)=>{

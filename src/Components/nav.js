@@ -9,6 +9,8 @@ import { FaUserAlt } from "react-icons/fa";
 
 
 function Nav( {Search , setSearch , searchProducts}){
+
+  
     const { loginWithRedirect , logout , user, isAuthenticated, isLoading } = useAuth0();
     if (isLoading) {
         return (
@@ -21,9 +23,15 @@ function Nav( {Search , setSearch , searchProducts}){
                     <div id="dot"></div>
                 </div>
         </section>
-        );
-        
+        ); 
     }
+    const handleLogout = () => {
+        logout({
+          returnTo: window.location.hostname === 'localhost'
+            ? 'http://localhost:3000/project-7/'  // Local development URL
+            : 'https://ganesh-s7.github.io/project-7/'  // Production URL
+        });
+      };
       console.log(Search)
     return(
         <>
@@ -41,7 +49,7 @@ function Nav( {Search , setSearch , searchProducts}){
                 {
                     isAuthenticated ?
                 
-                    <div className="login" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><FiLogOut />Logout</div>
+                    <div className="login" onClick={handleLogout}><FiLogOut />Logout</div>
                     :
                     <div className="login" onClick={() => loginWithRedirect()}><FiLogIn />Login</div>
                 }
