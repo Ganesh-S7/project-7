@@ -1454,6 +1454,13 @@ width: 430px !important;
         height: 20px;
     }
 
+    .cart svg{
+        width: 22px;
+        height: 22px;
+        margin-top: 3px;
+        margin-right: -10px;
+    }
+
     .offer{
         /* width: 80px;
         font-size: 6px;
@@ -1496,18 +1503,19 @@ width: 430px !important;
     }
 
     .wishlist-container{
-        margin-left: -20px;
+        /* margin-left: -20px; */
+        /* justify-content: center; */
     }
 
     .right-wish{
-        width: 440px;
+        width: 480px;
         margin: 0 !important;
         box-shadow: none;
     }
 
     .cart-box{
         padding: 20px 40px ;   
-        width: 420px;
+        width: 450px;
     }
 
     .cart-img img{
@@ -1551,7 +1559,11 @@ width: 430px !important;
     }
 
     .bin svg{
+        margin-top: 5px;
         width: 13px;
+    }
+    .wish-footer{
+        gap: 30px;
     }
 
     /* wishlist */
@@ -1632,8 +1644,9 @@ width: 430px !important;
     }
 
     .scroll-button{
-        width: 28px;
-        height: 80px;
+        width: 20px;
+        height: 50px;
+        padding: 5px;
     }
     
     /* collection */
@@ -2029,12 +2042,17 @@ width: 430px !important;
     }
 
     .search-btn svg,
-    .cart svg,
     .login svg,
     .user svg,
     .user-pic{
         width: 16px;
         height: 16px;
+    }
+
+    .cart a svg{
+        width: 20px;
+        height: 20px;
+        margin: 8px -5px 5px 15px;
     }
 
     .nav-left{
@@ -2113,20 +2131,23 @@ width: 430px !important;
     /* wishlist */
     .wishlist-container{
         margin-left: -40px;
+        /* justify-content: center; */
     }
 
     .right-wish{
-        width: 390px;
+        width: 410px;
     }
 
     .cart-box{
+        /* width: 410px; */
         padding: 0;
+        padding-left: 20px;
     }
 
     .cart-img img{
         margin-top: 25px;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         margin-left: 0px;
     }
 
@@ -2158,6 +2179,9 @@ width: 430px !important;
         width: 60px;
         font-size: 8px;
         height: 20px;
+    }
+    .wish-footer{
+        gap: 30px;
     }
 
 
