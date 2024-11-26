@@ -51,7 +51,7 @@ const Cart = ({cart ,setcart}) => {
 
   return (
     <>
-    <section className='cart-sectcion'>
+    <section className='cart-section'>
       <div className='cart-id'>
           <h3>Cart < MdOutlineShoppingCart/></h3>
       </div>
@@ -61,10 +61,10 @@ const Cart = ({cart ,setcart}) => {
         <div className='cart-container'>
             <div className='empty-details'>
               <h3>Your Shopping cart is empty</h3>
-              <button className='empty-btn'><Link to="/shop">Shop Now</Link></button>
+              <button className='empty-btn'><Link to="../project-7/shop">Shop Now</Link></button>
             </div>
             <div className='empty'>
-              <img src="/img/empty.webp" alt="empty" />
+              <img src='../project-7/img/empty.webp' alt="empty" />
             </div>
         </div>
       </>

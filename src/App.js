@@ -107,9 +107,11 @@ const addtolist = (product) =>{
   return (
     <>
     <BrowserRouter>
+    <div className='app-container'>
       <Nav Search={Search}  setSearch={setSearch} searchProducts={searchProducts} />
       <Rout Products={Products} categoriesFilter={categoriesFilter} trending={trending} filtercato={filtercato} tnd={tnd} addtocart={addtocart} cart={cart} setcart={setcart} addtolist={addtolist} list={list} detailspage={detailspage} closePage={closePage} showDetails={showDetails} details={details} setList={setList} />
       <Footer/>
+    </div>
       </BrowserRouter>
     </>
   );

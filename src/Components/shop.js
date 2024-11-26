@@ -50,7 +50,7 @@ const Shop = ({ Products , trending , categoriesFilter , addtocart , addtolist ,
                 </div>
                 <div className='cato-grp'>
                     <div className='poster1'>
-                        <img src='/img/poster4.jpg' alt='poster'/>
+                        <img src='../project-7/img//poster4.jpg' alt='poster'/>
                     </div>
                     <div className='shop-cato'>
                         <div className='cato-head'>
@@ -71,15 +71,15 @@ const Shop = ({ Products , trending , categoriesFilter , addtocart , addtolist ,
                     </div>
                 </div>
                 {/* <div className='poster1'>
-                    <img src='/img/poster3.jpg' alt='poster'/>
+                    <img src='../project-7/img//poster3.jpg' alt='poster'/>
                 </div> */}
                 <div className='poster3'>
-                    <img src='/img/poster1.webp' alt='poster'/>
+                    <img src='../project-7/img//poster1.webp' alt='poster'/>
                 </div>
             </div>
             <div className='shop-right'>
                 <div className='poster2'>
-                    <img src='/img/poster2.png' alt='poster'/>
+                    <img src='../project-7/img//poster2.png' alt='poster'/>
                 </div>
                 <div className='shop-products'>
                     <h3 className='shop-title'>SHOP PRODUCTS</h3>

@@ -6,7 +6,6 @@ import { FiSearch } from "react-icons/fi";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FiLogIn , FiLogOut } from "react-icons/fi";
 import { FaUserAlt } from "react-icons/fa";
-// import Loader from './loader.js';
 
 
 function Nav( {Search , setSearch , searchProducts}){
@@ -30,7 +29,7 @@ function Nav( {Search , setSearch , searchProducts}){
         <>
         <header>
             <div className="nav-right">
-                <img className="logo" src='/img/logo.png' alt="logo"/>
+                <img className="logo" src='../project-7/img//logo.png' alt="logo"/>
             </div>
             <div className="nav-left">
                 <div className="search">
@@ -38,7 +37,7 @@ function Nav( {Search , setSearch , searchProducts}){
                     <div className="search-btn" onClick={searchProducts}><FiSearch /></div>
                 </div>
                 {/* <div className="cart"><MdOutlineShoppingCart /></div> */}
-                <div className="cart"><Link to ='/cart'><MdOutlineShoppingCart /></Link></div>
+                <div className="cart"><Link to ='project-7/cart'><MdOutlineShoppingCart /></Link></div>
                 {
                     isAuthenticated ?
                 
@@ -68,11 +67,11 @@ function Nav( {Search , setSearch , searchProducts}){
                 null
                 }
                 <ul className="main-nav">
-                    <li><Link to ='/' className="nav-item">Home</Link></li>
-                    <li><Link to ='/shop' className="nav-item">Shop</Link></li>
-                    <li><Link to ='/collection' className="nav-item">Collection</Link></li>
-                    <li><Link to ='/wishlist' className="nav-item">Wishlist</Link></li>
-                    <li><Link to ='/contact' className="nav-item">Contact</Link></li>
+                    <li><Link to ='project-7/' className="nav-item">Home</Link></li>
+                    <li><Link to ='project-7/shop' className="nav-item">Shop</Link></li>
+                    <li><Link to ='project-7/collection' className="nav-item">Collection</Link></li>
+                    <li><Link to ='project-7/wishlist' className="nav-item">Wishlist</Link></li>
+                    <li><Link to ='project-7/contact' className="nav-item">Contact</Link></li>
                 </ul>
                 </div>
             </div>

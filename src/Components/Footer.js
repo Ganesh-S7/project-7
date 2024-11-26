@@ -50,7 +50,7 @@ const Footer = () => {
             <div className='footer-right'>
                 <div className='footer-head'>
                     <div className='footer-logo'>
-                        <img src='/img/logo.png' alt='logo' />
+                        <img src='../project-7/img//logo.png' alt='logo' />
                     </div>                   
                 </div>
                 <div className='site-map'>

@@ -3,10 +3,20 @@
     padding: 0;
 }
 
+
+.wishlist-section{
+    flex: 1;
+    overflow: auto; 
+    /* padding-bottom: 330px; */
+    /* height: 70dvh; */
+}
+
 .wishlist-container{
     width: 100%;
+    /* height: 100dvh; */
     display: flex;
     justify-content: space-between;
+    
 }
 
 .left-wish img{

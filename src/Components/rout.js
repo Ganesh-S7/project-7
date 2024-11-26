@@ -12,12 +12,12 @@ const Rout = ({Products ,categoriesFilter , trending ,filtercato ,tnd , addtocar
     return(
         <>
         <Routes>
-            <Route path='/' element={<Home Products={Products}  tnd={tnd} filtercato={filtercato} addtocart={addtocart} detailspage={detailspage} closePage={closePage} showDetails={showDetails} details={details} addtolist={addtolist} />}/>
-            <Route path='/cart' element={<Cart cart={cart} setcart={setcart} />} />
-            <Route path='/shop' element={<Shop Products={Products} categoriesFilter={categoriesFilter} addtocart={addtocart} trending={trending} addtolist={addtolist} detailspage={detailspage} closePage={closePage} showDetails={showDetails} details={details} />}/>
-            <Route path='/collection' element={<Collection addtolist={addtolist} addtocart={addtocart} detailspage={detailspage} details={details} showDetails={showDetails} closePage={closePage} />} />
-            <Route path='/wishlist' element={<Wishlist list={list} setList={setList} addtocart={addtocart} />} />
-            <Route path='/contact' element={<Contact categoriesFilter={categoriesFilter} showDetails={showDetails} closePage={closePage} />} />
+            <Route path='project-7/' element={<Home Products={Products}  tnd={tnd} filtercato={filtercato} addtocart={addtocart} detailspage={detailspage} closePage={closePage} showDetails={showDetails} details={details} addtolist={addtolist} />}/>
+            <Route path='project-7/cart' element={<Cart cart={cart} setcart={setcart} />} />
+            <Route path='project-7/shop' element={<Shop Products={Products} categoriesFilter={categoriesFilter} addtocart={addtocart} trending={trending} addtolist={addtolist} detailspage={detailspage} closePage={closePage} showDetails={showDetails} details={details} />}/>
+            <Route path='project-7/collection' element={<Collection addtolist={addtolist} addtocart={addtocart} detailspage={detailspage} details={details} showDetails={showDetails} closePage={closePage} />} />
+            <Route path='project-7/wishlist' element={<Wishlist list={list} setList={setList} addtocart={addtocart} />} />
+            <Route path='project-7/contact' element={<Contact categoriesFilter={categoriesFilter} showDetails={showDetails} closePage={closePage} />} />
         </Routes>
         </>
     )

@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.cart-section{
+    flex: 1;
+    overflow: auto; 
+}
+
 .cart-container{
     /* width: 100%; */
     overflow: hidden;

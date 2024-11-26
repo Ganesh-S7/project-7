@@ -35,10 +35,10 @@ const Wishlist = ({ list, setList, addtocart }) => {
             <div className='cart-container'>
                 <div className='empty-details'>
                 <h3>Your Wishlist is empty</h3>
-                <button className='empty-btn'><Link to="/shop">Shop Now</Link></button>
+                <button className='empty-btn'><Link to="../project-7/shop">Shop Now</Link></button>
                 </div>
                 <div className='empty'>
-                <img src="/img/wishlist.png" alt="empty" />
+                <img src="../project-7/img/wishlist.png" alt="empty" />
                 </div>
             </div>
             </>
@@ -48,7 +48,7 @@ const Wishlist = ({ list, setList, addtocart }) => {
               <>
             <div className='wishlist-container'>
                 <div className='left-wish'>
-                    <img src="/img/vertical.png" alt="poster" />
+                    <img src="../project-7/img/vertical.png" alt="poster" />
                 </div>
                 <div className='right-wish'>
                 {list.map((products , index)=>{
