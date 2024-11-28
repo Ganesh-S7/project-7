@@ -44,37 +44,31 @@ const categorySynonyms = {
 };
 
 const searchProducts = () => {
-  // If the search term is empty, show the alert and reset products
+
   if (searchLength) {
+    
       alert("Please search something");
-      SetProducts(Homeproducts);
+
   } else {
-      // Convert the search term to lowercase for case-insensitive matching
+
       const lowerCaseSearchTerm = Search.toLowerCase();
 
-      // Find matching synonyms for the search term
       let matchingCategories = [];
 
-      // Check if the search term matches any synonym group
       for (let category in categorySynonyms) {
-          // Use regex or includes to check for matching categories
+          
           const regex = new RegExp(categorySynonyms[category].join("|"), "i");
           if (regex.test(lowerCaseSearchTerm)) {
-              matchingCategories.push(category); // Add matching category
+              matchingCategories.push(category); 
           }
       }
 
-      // If we find matching categories, filter the products
       if (matchingCategories.length > 0) {
-          // Filter all products whose category matches any of the matching categories
           const searchFilter = Homeproducts.filter((product) => {
-              // Check if the product's category matches any of the matching categories
               return matchingCategories.includes(product.cat.toLowerCase());
           });
-
           SetProducts(searchFilter);
       } else {
-          // If no match is found, return an empty set or original products
           alert("Search not found!!!");
       }
   }
