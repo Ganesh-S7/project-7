@@ -26,12 +26,17 @@ function Nav( {Search , setSearch , searchProducts}){
         ); 
     }
     const handleLogout = () => {
+        console.log("Current hostname:", window.location.hostname);
+      
+        const returnUrl = window.location.hostname === 'localhost'
+          ? 'http://localhost:3000/project-7/'
+          : 'https://ganesh-s7.github.io/project-7/';
+      
         logout({
-          returnTo: window.location.hostname === 'localhost'
-            ? 'http://localhost:3000/project-7/'  // Local development URL
-            : 'https://ganesh-s7.github.io/project-7/'  // Production URL
+          returnTo: returnUrl
         });
       };
+      
       console.log(Search)
     return(
         <>
