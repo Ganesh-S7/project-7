@@ -26,15 +26,19 @@ function Nav( {Search , setSearch , searchProducts}){
         ); 
     }
     const handleLogout = () => {
-        console.log("Current hostname:", window.location.hostname);
-      
-        const returnUrl = window.location.hostname === 'localhost'
+        const isLocalhost = window.location.hostname === 'localhost';
+        const returnUrl = isLocalhost
           ? 'http://localhost:3000/project-7/'
           : 'https://ganesh-s7.github.io/project-7/';
       
+        console.log("Logging out. Redirecting to:", returnUrl);
+        
         logout({
           returnTo: returnUrl
         });
+        
+        // Explicitly navigate to the returnUrl as a fallback
+        window.location.href = returnUrl;
       };
       
       console.log(Search)
