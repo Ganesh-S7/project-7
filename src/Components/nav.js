@@ -27,7 +27,9 @@ function Nav( {Search , setSearch , searchProducts}){
     }
     const handleLogout = () => {
         logout({
-          returnTo: 'https://ganesh-s7.github.io/project-7/'  
+          returnTo: window.location.hostname === 'localhost'
+            ? 'http://localhost:3000/project-7/'  
+            : 'https://ganesh-s7.github.io/project-7/' 
         });
       };
       console.log(Search)

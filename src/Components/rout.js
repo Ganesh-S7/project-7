@@ -18,6 +18,7 @@ const Rout = ({Products ,categoriesFilter , trending ,filtercato ,tnd , addtocar
             <Route path='/project-7/collection' element={<Collection addtolist={addtolist} addtocart={addtocart} detailspage={detailspage} details={details} showDetails={showDetails} closePage={closePage} />} />
             <Route path='/project-7/wishlist' element={<Wishlist list={list} setList={setList} addtocart={addtocart} />} />
             <Route path='/project-7/contact' element={<Contact categoriesFilter={categoriesFilter} showDetails={showDetails} closePage={closePage} />} />
+            <Route component={Home} />
         </Routes>
         </>
     )
