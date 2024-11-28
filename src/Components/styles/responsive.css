@@ -1928,6 +1928,7 @@ width: 430px !important;
         
         .place-order{
             width: 450px;
+            box-shadow: none;
         }
         
         .cart-total h6{
