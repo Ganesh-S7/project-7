@@ -977,16 +977,17 @@ width: 430px !important;
     
     /* nav */
     header{
-        height: 60px;
+        height: 80px;
     }
 
     nav{
-        margin-top: 60px;
-        height: 45px;
+        margin-top: 80px;
+        height: 60px;
     }
 
     .logo{
-        width: 140px;
+        width: 150px;
+        height: 50px;
         margin-top: 10px;
     }
 
@@ -997,19 +998,21 @@ width: 430px !important;
     
     .search-bar{
         width: 200px;
-        height: 22px;
+        height: 27px;
         font-size: 9px;
     }
 
     .search-btn svg{
         margin-left:-35px ;
+        width: 22px;
+        height: 22px;
     }
 
     .login svg,
     .user svg,
     .user-pic{
-        width: 16px;
-        height: 16px;
+        width: 17px;
+        height: 19px;
         margin-right: -8px;
     }
 
@@ -1025,7 +1028,7 @@ width: 430px !important;
 
     .main-nav{
         margin: 6px;
-        padding-top: 5px;
+        padding-top: 15px;
         margin-left: 0px;
     }
     .nav-item{
@@ -1434,15 +1437,16 @@ width: 430px !important;
 
 
     header{
-        height: 65px;
+        height: 75px;
     }
     nav{
-        margin-top: 65px;
-        height: 40px;
+        margin-top: 75px;
+        height: 50px;
     }
 
     .logo{
-        width: 130px;
+        width: 140px;
+        margin-top: 10px;
     }
 
     .search{
@@ -1452,11 +1456,12 @@ width: 430px !important;
     .search-bar{
         width: 130px;
         height: 20px;
+        font-size: 11px;
     }
 
     .cart svg{
         width: 22px;
-        height: 22px;
+        height: 25px;
         margin-top: 3px;
         margin-right: -10px;
     }
@@ -1472,11 +1477,12 @@ width: 430px !important;
     .main-nav{
         gap: 24px;
         margin: 4px;
-        margin-left: 85px;
+        margin-left: 75px;
+        padding-top: 10px;
     }
     
     .nav-item{
-        font-size: 8px;
+        font-size: 10px;
     }
     /* nav */
 
@@ -1614,33 +1620,33 @@ width: 430px !important;
     }
 
     .box{
-        width: 200px;
-        height: 240px;
+        width: 190px;
+        height: 220px;
         padding: 8px;
         border: 3px solid rgb(223, 232, 234);
         margin: 20px 10px ;
     }
 
     .box-img img{
-        width: 85px;
-        height: 85px;  
+        width: 70px;
+        height: 70px;  
     }
 
     .box-title p{
-        font-size: 12px;
-        margin-top: 15px;
+        font-size: 11px;
+        margin-top: 10px;
     }
 
     .add button{       
-        width: 90px;
-        height: 30px;
+        width: 85px;
+        height: 27px;
         font-size: 10px;
         margin: 3px 0 ;
     }
 
     .price,
     .disc{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .scroll-button{
@@ -1823,6 +1829,7 @@ width: 430px !important;
         width: 180px;
         height: 25px;
         font-size: 10px;
+        padding: 0 15px;
     }
 
     .email-form button{
@@ -2025,7 +2032,7 @@ width: 430px !important;
     /* nav */
 
     .logo{
-        width: 120px;
+        width: 130px;
         margin-left: -7px;
     }
 
@@ -2035,8 +2042,9 @@ width: 430px !important;
     
     .search-bar{
         width: 100px;
-        height: 15px;
-        font-size: 8px;
+        height: 20px;
+        font-size: 9px;
+        padding: 0px 0 1px 15px;
     }
 
     .search-btn svg{
@@ -2047,8 +2055,8 @@ width: 430px !important;
     .login svg,
     .user svg,
     .user-pic{
-        width: 16px;
-        height: 17px;
+        width: 17px;
+        height: 18px;
     }
 
     .cart a svg{
@@ -2078,11 +2086,11 @@ width: 430px !important;
     .main-nav{
         gap: 24px;
         margin: 4px;
-        margin-left: 35px;
+        margin-left: 25px;
     }
     
     .nav-item{
-        font-size: 8px;
+        font-size: 9px;
     }
 
     .username{
@@ -2219,31 +2227,32 @@ width: 430px !important;
 
     .box{
         width: 170px;
-        height: 220px;
+        height: 190px;
         padding: 5px;
         margin: 15px 8px ;
     }
 
     .box-img img{
-        width: 80px;
-        height: 80px;  
+        width: 60px;
+        height: 60px;  
     }
 
     .box-title p{
         font-size: 10px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .add button{       
         width: 80px;
-        height: 27px;
+        height: 25px;
         font-size: 10px;
         margin: 3px 0 ;
+        padding: 0;
     }
 
     .price,
     .disc{
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .poster1 img{
@@ -2274,7 +2283,7 @@ width: 430px !important;
     /* home */
 
     .slide div img{
-    height: 200px;
+    height: 220px;
     }
 
 
